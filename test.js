@@ -5,11 +5,12 @@ function Tumbler(content) {
       return drink
     },
     setType : function(newType) {
-      drink : newType
+      drink = newType
     }
   };
 }
 
 const canu = Tumbler("커피")
 //console.log(canu)
-console.log(canu.setType("물")) // undefined
+canu.setType("물")
+console.log(canu.getType())
